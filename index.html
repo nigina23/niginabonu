@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio — Niginabonu: Web developer. Projects, skills and contact." />
+    <title>Niginabonu's — Web Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="Nigina - Go to homepage">Nigina</a>
+        <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+          <span class="sr-only">Toggle navigation menu</span>
+          <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">My projects</a></li>
+            <li><a href="#skills">My skills</a></li>
+            <li><a href="#contact">Contact me</a></li>
+            <li><a class="btn btn-outline" href="#" title="Download My Resume">My resume</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content"> <section class="hero" role="region" aria-labelledby="hero-heading">
+        <div class="container">
+          <h1 id="hero-heading">Hi, I’m Niginabonu Isamukhamedova</h1>
+          <p class="hero-ctas">
+            <a class="btn" href="#projects">See projects</a>
+            <a class="btn btn-outline" href="#contact">Contact me</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+        <h2>I have inclusion in mind</h2>
+        <div class="about-grid">
+          <div>
+            <p>I can help make your website more inclusive and accessible. This website has been designed to be accessible to keyboard users and screen readers. To experience keyboard navigation, simply press the Tab key to move through my portfolio.</p>
+            <nav aria-label="Social media links">
+                <ul class="socials">
+                  <li><a href="#">GitHub profile</a></li>
+                  <li><a href="#">LinkedIn profile</a></li>
+                </ul>
+            </nav>
+          </div>
+          <div class="photo-placeholder">
+            <img src="media/web%20portfolio%20bild.png" alt="Portrait of Niginabonu Isamukhamedova">
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects container">
+        <h2>Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>visaGo</h3>
+            <p>Short description of the project, tech used and link to repo or live demo.</p>
+            <p><a href="#" aria-label="View visaGo project details">View project →</a></p>
+          </article>
+          <article class="card">
+            <h3>My bachelor thesis</h3>
+            <p>Short description of the project, tech used and link to repo or live demo.</p>
+            <p><a href="#" aria-label="View My bachelor thesis project details">View project →</a></p>
+          </article>
+          <article class="card">
+            <h3>Project Three</h3>
+            <p>Short description of the project, tech used and link to repo or live demo.</p>
+            <p><a href="#" aria-label="View Project Three details">View project →</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills container">
+        <h2>Skills</h2>
+        <ul class="chips">
+          <li><span>HTML</span></li>
+          <li><span>CSS</span></li>
+          <li><span>JavaScript</span></li>
+          <li><span>Vue.js</span></li>
+          <li><span>Accessibility</span></li>
+          <li><span>User Experience Design</span></li>
+          <li><span>User Interface Design</span></li>
+          <li><span>Inclusive Design</span></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <section id="contact" class="contact">
+          <h2>Contact</h2>
+          <p>If you’d like to get in touch, email <a href="mailto:nigina.isamukhamedova@gmail.com">nigina.isamukhamedova@gmail.com</a> or use the simple form below.</p>
+          
+          <form class="contact-form" action="mailto:nigina.isamukhamedova@gmail.com" method="post" enctype="text/plain">
+            <label for="name-input">
+              Your name
+              <input type="text" id="name-input" name="name" required>
+            </label>
+            <label for="message-textarea">
+              Your message
+              <textarea id="message-textarea" name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn" type="submit">Send message</button>
+          </form>
+        </section>
+
+        <p>© <time id="year"></time> Niginabonu Isamukhamedova. I made it with ♥</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+  </body>
+</html>
