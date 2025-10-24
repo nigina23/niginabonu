@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Nigina Bonu - Bachelor of Engineering passionate about inclusive and accessible web development, UI/UX Design">
+    <title>Nigina Bonu - Web Developer & UI/UX Designer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content link for keyboard users -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header with navigation -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="#home" class="logo" aria-label="Home - Nigina Bonu">
+                    <span aria-hidden="true">NB</span>
+                </a>
+                <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="hamburger" aria-hidden="true"></span>
+                </button>
+                <ul id="nav-menu" class="nav-menu" role="menubar">
+                    <li role="none"><a href="#about" role="menuitem">About</a></li>
+                    <li role="none"><a href="#skills" role="menuitem">Skills</a></li>
+                    <li role="none"><a href="#education" role="menuitem">Education</a></li>
+                    <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main content -->
+    <main id="main-content" tabindex="-1">
+        <!-- Hero section -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <h1 id="hero-heading">
+                    Hi, I'm <span class="highlight">Nigina Bonu</span>
+                </h1>
+                <p class="hero-subtitle" role="doc-subtitle">
+                    Bachelor of Engineering | Web Developer | UI/UX Designer
+                </p>
+                <p class="hero-description">
+                    Passionate about developing <strong>inclusive and accessible</strong> web applications and apps
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary">View My Work</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <h2 id="about-heading">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a <strong>Bachelor of Engineering</strong> graduate from Germany with a deep passion for creating 
+                            inclusive and accessible web applications. I believe that the web should be accessible to everyone, 
+                            regardless of their abilities or the devices they use.
+                        </p>
+                        <p>
+                            My expertise spans across <strong>web development</strong> and <strong>UI/UX design</strong>, 
+                            allowing me to create user-centered experiences that are both beautiful and functional. 
+                            I'm proficient in Figma and follow accessibility best practices in all my projects.
+                        </p>
+                        <p>
+                            I'm committed to building web solutions that prioritize accessibility, usability, 
+                            and inclusive design principles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills" class="skills" aria-labelledby="skills-heading">
+            <div class="container">
+                <h2 id="skills-heading">Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">💻</div>
+                        <h3>Web Development</h3>
+                        <ul>
+                            <li>HTML5 (Semantic & Accessible)</li>
+                            <li>CSS3 (Responsive Design)</li>
+                            <li>JavaScript (ES6+)</li>
+                            <li>Web Accessibility (WCAG)</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">🎨</div>
+                        <h3>UI/UX Design</h3>
+                        <ul>
+                            <li>User-Centered Design</li>
+                            <li>Figma (Proficient)</li>
+                            <li>Prototyping</li>
+                            <li>Inclusive Design</li>
+                        </ul>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon" aria-hidden="true">♿</div>
+                        <h3>Accessibility</h3>
+                        <ul>
+                            <li>WCAG 2.1 AA Compliance</li>
+                            <li>Keyboard Navigation</li>
+                            <li>Screen Reader Support</li>
+                            <li>ARIA Best Practices</li>
+                        </ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education section -->
+        <section id="education" class="education" aria-labelledby="education-heading">
+            <div class="container">
+                <h2 id="education-heading">Education</h2>
+                <div class="education-content">
+                    <article class="education-item">
+                        <div class="education-icon" aria-hidden="true">🎓</div>
+                        <div class="education-details">
+                            <h3>Bachelor of Engineering</h3>
+                            <p class="education-location">Germany</p>
+                            <p class="education-description">
+                                Graduated with a Bachelor of Engineering degree, gaining comprehensive 
+                                knowledge in engineering principles, software development, and technology.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects" class="projects" aria-labelledby="projects-heading">
+            <div class="container">
+                <h2 id="projects-heading">Projects</h2>
+                <p class="section-intro">
+                    Here are some examples of my work focusing on accessible and inclusive web development:
+                </p>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Accessible Web Application</h3>
+                            <p>
+                                A fully accessible web application built with semantic HTML, ARIA attributes, 
+                                and keyboard navigation support. Meets WCAG 2.1 AA standards.
+                            </p>
+                            <div class="project-tags" role="list" aria-label="Technologies used">
+                                <span class="tag" role="listitem">HTML</span>
+                                <span class="tag" role="listitem">CSS</span>
+                                <span class="tag" role="listitem">JavaScript</span>
+                                <span class="tag" role="listitem">WCAG</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>UI/UX Design Project</h3>
+                            <p>
+                                Designed an inclusive user interface in Figma, focusing on user experience 
+                                and accessibility for diverse user groups.
+                            </p>
+                            <div class="project-tags" role="list" aria-label="Technologies used">
+                                <span class="tag" role="listitem">Figma</span>
+                                <span class="tag" role="listitem">UI/UX</span>
+                                <span class="tag" role="listitem">Prototyping</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-content">
+                            <h3>Responsive Portfolio Site</h3>
+                            <p>
+                                A responsive and accessible portfolio website with focus indicators, 
+                                semantic HTML, and screen reader support.
+                            </p>
+                            <div class="project-tags" role="list" aria-label="Technologies used">
+                                <span class="tag" role="listitem">HTML5</span>
+                                <span class="tag" role="listitem">CSS3</span>
+                                <span class="tag" role="listitem">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading">Get In Touch</h2>
+                <p class="contact-intro">
+                    I'm open to new opportunities and collaborations. Feel free to reach out!
+                </p>
+                <form class="contact-form" aria-label="Contact form" novalidate>
+                    <div class="form-group">
+                        <label for="name">Name <span class="required" aria-label="required">*</span></label>
+                        <input 
+                            type="text" 
+                            id="name" 
+                            name="name" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="name-error"
+                        >
+                        <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span class="required" aria-label="required">*</span></label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="email-error"
+                        >
+                        <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span class="required" aria-label="required">*</span></label>
+                        <textarea 
+                            id="message" 
+                            name="message" 
+                            rows="5" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="message-error"
+                        ></textarea>
+                        <span id="message-error" class="error-message" role="alert" aria-live="polite"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Nigina Bonu. All rights reserved.</p>
+            <p class="footer-note">Built with accessibility in mind 💙</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
