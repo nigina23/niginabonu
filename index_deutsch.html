@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio — Niginabonu: Webentwicklerin. Projekte, Fähigkeiten und Kontakt." />
+    <title>Niginabonu's — Web-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="/" aria-label="Nigina - Zur Startseite gehen">Nigina</a>
+    <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+      <span class="sr-only">Navigationsmenü umschalten</span>
+      <span aria-hidden="true">☰</span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Hauptnavigation">
+      <ul>
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="#projects">Meine Projekte</a></li>
+        <li><a href="#skills">Meine Fähigkeiten</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+        <li><a class="btn btn-outline" href="#" title="Meinen Lebenslauf herunterladen">Download Lebenslauf</a></li>
+        
+        <li>
+          <a class="btn btn-primary lang-switch" href="index.html" title="Change language to English">
+            EN
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+    <main id="main-content"> 
+      <section class="hero" role="region" aria-labelledby="hero-heading">
+        <div class="container">
+          <h1 id="hero-heading">Hallo, ich bin Niginabonu Isamukhamedova</h1>
+          <p class="hero-ctas">
+            <a class="btn" href="#projects">Projekte ansehen</a>
+            <a class="btn btn-outline" href="#contact">Kontakt aufnehmen</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="about container">
+        <h2>Inklusion ist mir wichtig</h2>
+        <div class="about-grid">
+          <div>
+            <p>Ich kann dabei helfen, Ihre Website inklusiver und barrierefreier zu gestalten. Diese Website wurde so konzipiert, dass sie für Tastaturbenutzer und Screenreader zugänglich ist. Um die Tastaturnavigation zu erleben, drücken Sie einfach die Tab-Taste, um sich durch mein Portfolio zu bewegen.</p>
+            <nav aria-label="Links zu sozialen Medien">
+                <ul class="socials">
+                  <li><a href="#">GitHub-Profil</a></li>
+                  <li><a href="#">LinkedIn-Profil</a></li>
+                </ul>
+            </nav>
+          </div>
+          <div class="photo-placeholder">
+            <img src="media/web%20portfolio%20bild.png" alt="Porträt von Niginabonu Isamukhamedova">
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects container">
+        <h2>Projekte</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>visaGo</h3>
+            <p>Kurzbeschreibung des Projekts, verwendete Technologien und Link zum Repository oder zur Live-Demo.</p>
+            <p><a href="visago.html" aria-label="Details zum Projekt visaGo ansehen">Projekt ansehen →</a></p>
+          </article>
+          <article class="card">
+            <h3>Meine Bachelorarbeit</h3>
+            <p>Kurzbeschreibung des Projekts, verwendete Technologien und Link zum Repository oder zur Live-Demo.</p>
+            <p><a href="#" aria-label="Details zu meiner Bachelorarbeit ansehen">Projekt ansehen →</a></p>
+          </article>
+          <article class="card">
+            <h3>Projekt Drei</h3>
+            <p>Kurzbeschreibung des Projekts, verwendete Technologien und Link zum Repository oder zur Live-Demo.</p>
+            <p><a href="#" aria-label="Details zu Projekt Drei ansehen">Projekt ansehen →</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="skills container">
+        <h2>Fähigkeiten</h2>
+        <ul class="chips">
+          <li><span>HTML</span></li>
+          <li><span>CSS</span></li>
+          <li><span>JavaScript</span></li>
+          <li><span>Vue.js</span></li>
+          <li><span>Barrierefreiheit (Accessibility)</span></li>
+          <li><span>User Experience Design (UX)</span></li>
+          <li><span>User Interface Design (UI)</span></li>
+          <li><span>Inklusives Design (Inclusive Design)</span></li>
+        </ul>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <section id="contact" class="contact">
+          <h2>Kontakt</h2>
+          <p>Wenn Sie Kontakt aufnehmen möchten, senden Sie eine E-Mail an <a href="mailto:nigina.isamukhamedova@gmail.com">nigina.isamukhamedova@gmail.com</a> oder nutzen Sie das einfache Formular unten.</p>
+          
+          <form class="contact-form" action="mailto:nigina.isamukhamedova@gmail.com" method="post" enctype="text/plain">
+            <label for="name-input">
+              Ihr Name
+              <input type="text" id="name-input" name="name" required>
+            </label>
+            <label for="message-textarea">
+              Ihre Nachricht
+              <textarea id="message-textarea" name="message" rows="5" required></textarea>
+            </label>
+            <button class="btn" type="submit">Nachricht senden</button>
+          </form>
+        </section>
+
+        <p>© <time id="year"></time> Niginabonu Isamukhamedova. Mit ♥ erstellt</p>
+      </div>
+    </footer>
+
+    <script src="scripts.js" defer></script>
+  </body>
+</html>

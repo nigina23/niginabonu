@@ -23,16 +23,16 @@
 *, *::before, *::after {
     box-sizing: border-box; /* Better reset for accessibility and layout */
 }
-html,body{height:100%}
-body{
+/* --- body (Grundlegende Änderung) --- */
+body {
     margin:0;
     font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     color:var(--text);
-    /* Gradient ensures a smooth transition, but text contrast must hold up */
-    background: linear-gradient(180deg, var(--bg) 0%, #fff 60%);
+    /* NEU: Hintergrundverlauf entfernt, explizit Weiß gesetzt */
+    background: #fff; 
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing:grayscale;
-    line-height:1.5; /* Increased line-height for better readability (WCAG guideline) */
+    line-height:1.5;
 }
 
 h1, h2, h3, h4 { 
@@ -138,9 +138,10 @@ a:focus, button:focus, .btn:focus, input:focus, textarea:focus, .nav-toggle:focu
 }
 
 
-/* Footer */
+/* --- Footer (Farbe beibehalten) --- */
 .site-footer{
-    padding:0; /* Padding is handled by the inner container */
+    padding:0; 
+    /* FARBE BEIBEHALTEN: Der Footer behält die Farbe Misty Rose */
     background: var(--misty-rose);
     color: var(--text); 
     font-size:0.95rem;
@@ -196,6 +197,30 @@ a:focus, button:focus, .btn:focus, input:focus, textarea:focus, .nav-toggle:focu
     opacity:1;
 }
 
+/* Layout for features + tech on project pages */
+.features-tech-grid{
+    display:flex;
+    gap:1rem;
+    align-items:flex-start;
+    margin-bottom:1.25rem;
+    flex-wrap:wrap;
+}
+.features-tech-grid > article{
+    flex:1 1 320px; /* grow, shrink, base width */
+    min-width:260px;
+    background: transparent;
+    padding:0.25rem 0.5rem;
+    /* user-requested visual style */
+    margin: 0 0 20px;
+    text-align: left; /* changed: left-align description text */
+    font-size: clamp(0.95rem, 1.7vw, 1.1rem);
+    font-weight: 600;
+    opacity: .95;
+}
+
+/* Ensure lists inside keep normal weight for readability */
+.features-tech-grid > article ul{font-weight:400;opacity:1}
+
 /* Responsive */
 @media (max-width:720px){
     .about-grid{grid-template-columns:1fr}
@@ -248,4 +273,20 @@ a:hover, button:hover, .btn:hover, input[type="submit"]:hover, .primary-nav a:ho
     /* No change needed here, the site-footer handles the background */
     padding: 0; 
     border-radius: 0;
+}
+/* Beispiel für CSS, um den Sprach-Button anzupassen */
+.lang-switch {
+    padding: 8px 12px; /* Etwas kleineres Padding */
+    margin-left: 10px; /* Abstand zum vorherigen Element */
+    background-color: transparent; /* Transparenter Hintergrund */
+    /* Sie können hier auch die Hintergrundfarbe ändern, z. B. zu Ihrer primären Farbe */
+}
+
+/* Optional: Stellen Sie sicher, dass der Button auf Mobilgeräten gut aussieht */
+@media (max-width: 768px) {
+    .primary-nav ul li .lang-switch {
+        margin-top: 10px;
+        width: 100%; /* Volle Breite, wenn das Menü aufgeklappt ist */
+        text-align: center;
+    }
 }
